@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS co ban</title>
+</head>
+<body>
+    <script>
+        let nvPhongA = [
+            {id: 1, name: "Bui Cong Thanh", age: 30},
+            {id: 20, name: "Tran Thi Trinh", age: 36},
+            {id: 30, name: "Le Thi Huyen", age: 35},
+            {id: 35, name: "Dinh Van X", age: 32},
+        ];
+        let dsNV = [
+            {id: 1, name: "Bui Cong Thanh", age: 30},
+            {id: 2, name: "Le Thi Trinh", age: 36},
+            {id: 7, name: "Dinh Tran Van X", age: 32},        
+            // {id: 30, name: "Le Thi Huyen", age: 35},
+            {id: 35, name: "Dinh Van X", age: 32},
+            {id: 11, name: "Bui Cong Thanh", age: 30},
+            {id: 20, name: "Tran Thi Trinh", age: 36},
+            {id: 377, name: "Le Thi Huyen", age: 35},
+        ];
+
+        splitEmployeeViaDept = function(nvA, allNV){
+            if (!Array.isArray(nvA) || !Array.isArray(allNV)){
+                console.log("Ca hai tham so phai la mang");
+                return;
+            }
+            if (nvA.length || allNV.length){
+                console.log("Ca hai mang khong duoc rong");
+                return;
+            }
+
+            const pAIds = nvPhongA.map(item => {
+                return item.id;
+            });
+            const mang1 = dsNV.filter(item => {
+                return pAIds.includes(item.id);
+            });
+            const mang2 = dsNV.filter(item => {
+                return !pAIds.includes(item.id);
+            });
+           
+            console.log("Employee co trong phong A"); console.log(mang1);
+            console.log("Employee khong thuoc phong A"); console.log(mang2);
+        }
+
+        splitEmployeeViaDept(nvPhongA, dsNV);
+    </script>
+</body>
+</html>
