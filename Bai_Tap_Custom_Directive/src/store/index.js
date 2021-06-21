@@ -1,0 +1,132 @@
+import Vue from 'vue'
+import Vuex from 'vuex'
+
+Vue.use(Vuex)
+
+export default new Vuex.Store({
+  state: {
+    demoTableData: [
+      {
+        asgl_date: "2021-06-01",
+        asgl_time: "07:01",
+        confirm: 10,
+        created_at: "2021-06-01 07:00:51",
+        date: "2021-06-01",
+        driver: "Nguyen Van A",
+        dsvcmd: null,
+        finish_push: "07:00",
+        id: 283,
+        nba: "03:30:00 PM",
+        number_tkvc: null,
+        open_date: null,
+        remark: null,
+        route: "AAA-AAA",
+        rows_count: 1,
+        seal_no: "T200039417/18/19",
+        start_push: "07:00",
+        truck_id: 43,
+        truck_name: "29H-09967",
+        truck_virtual_created: "2021-06-01",
+        updated_at: "2021-06-01 07:01:32"
+      },
+      {
+        asgl_date: "2021-06-01",
+        asgl_time: "07:01",
+        confirm: 10,
+        created_at: "2021-06-01 07:00:51",
+        date: "2021-06-01",
+        driver: null,
+        dsvcmd: null,
+        finish_push: "07:00",
+        id: 284,
+        nba: "03:30:00 PM",
+        number_tkvc: null,
+        open_date: null,
+        remark: null,
+        route: "VVV-VVV",
+        rows_count: 1,
+        seal_no: "T200039417/18/19",
+        start_push: "07:00",
+        truck_id: 43,
+        truck_name: "29H-09967",
+        truck_virtual_created: "2021-06-01",
+        updated_at: "2021-06-01 07:01:32"
+      },
+      {
+        asgl_date: "2021-06-01",
+        asgl_time: "07:01",
+        confirm: 10,
+        created_at: "2021-06-01 07:00:51",
+        date: "2021-06-01",
+        driver: null,
+        dsvcmd: null,
+        finish_push: "07:00",
+        id: 285,
+        nba: "03:30:00 PM",
+        number_tkvc: null,
+        open_date: null,
+        remark: null,
+        route: "BBB-BBB",
+        rows_count: 1,
+        seal_no: "T200039417/18/19",
+        start_push: "07:00",
+        truck_id: 44,
+        truck_name: "29H-09967",
+        truck_virtual_created: "2021-06-01",
+        updated_at: "2021-06-01 07:01:32"
+      },
+      {
+        asgl_date: "2021-06-01",
+        asgl_time: "07:01",
+        confirm: 10,
+        created_at: "2021-06-01 07:00:51",
+        date: "2021-06-01",
+        driver: null,
+        dsvcmd: null,
+        finish_push: "07:00",
+        id: 286,
+        nba: "03:30:00 PM",
+        number_tkvc: null,
+        open_date: null,
+        remark: null,
+        route: "CCC-CCC",
+        rows_count: 1,
+        seal_no: "T200039417/18/19",
+        start_push: "07:00",
+        truck_id: 44,
+        truck_name: "39H-09967",
+        truck_virtual_created: "2021-06-01",
+        updated_at: "2021-06-01 07:01:32"
+      },
+      {
+        asgl_date: "2021-06-01",
+        asgl_time: "07:01",
+        confirm: 10,
+        created_at: "2021-06-01 07:00:51",
+        date: "2021-06-01",
+        driver: null,
+        dsvcmd: null,
+        finish_push: "07:00",
+        id: 287,
+        nba: "03:30:00 PM",
+        number_tkvc: null,
+        open_date: null,
+        remark: null,
+        route: "CCC-CCC",
+        rows_count: 1,
+        seal_no: "T200039417/18/19",
+        start_push: "07:00",
+        truck_id: 45,
+        truck_name: "33H-09967",
+        truck_virtual_created: "2021-06-01",
+        updated_at: "2021-06-01 07:01:32"
+      }
+    ]
+  },
+  mutations: {
+  },
+  actions: {
+  },
+  modules: {
+  }
+})
